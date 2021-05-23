@@ -71,6 +71,12 @@ export default function Home() {
   
   const defaultPosition = [-23.550520, -46.633308]
 
+  useEffect(() => {
+    toast.warn("Please disable ADBlock for the application to work normally 😊🚀", {
+      autoClose: '10000',
+    })
+  }, [])
+
   return (
     <Container>
       <Head>
